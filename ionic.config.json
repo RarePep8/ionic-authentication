@@ -1,0 +1,7 @@
+{
+  "name": "blueboard-mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,48 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-grid *ngIf="decodedString">
+      <ion-row>
+        <ion-col>
+            JWToken: {{jwtoken}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          user_id: {{decodedString.user_id}}
+        </ion-col>
+        <ion-col>
+          permissions: {{decodedString.permissions}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          is_superuser: {{decodedString.is_superuser}}
+        </ion-col>
+        <ion-col>
+          user_type: {{decodedString.user_type}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          user_dname: {{decodedString.user_dname}}
+        </ion-col>
+        <ion-col>
+          orig_iat : {{decodedString.orig_iat}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            email: {{decodedString.email}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button size="large" expand="block" (click)='logout()'>Log out</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>
